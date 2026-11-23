@@ -1,0 +1,52 @@
+# Build context for scripts/mm/hosting/Dockerfile. Keeps the image small and keeps local secrets and state out.
+# Dependencies and build output
+node_modules
+**/node_modules
+.next
+.swc
+out
+build
+coverage
+*.lcov
+test-results
+playwright-report
+# Version control and other checkouts
+.git
+.gitignore
+worktrees
+# Local tool folders
+.claude
+.codex
+.agents
+.firecrawl
+.vercel
+.idea
+.vscode
+# Secrets: every env file, anywhere
+.env
+.env*
+**/.env
+**/.env*
+# Runner state: journals, ledgers, keys, locks, action counts, preferences
+.hip4-ag
+**/.hip4-ag
+data
+state
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.db
+*.db-*
+**/*.sqlite
+**/*.sqlite-*
+**/*.db
+**/*.actions.json
+**/profile*.json
+**/arming*.json
+**/*.lock
+**/boots.json
+**/preferences.json
+**/operator*.json
+# Logs
+*.log
+npm-debug.log*

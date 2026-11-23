@@ -1,0 +1,18 @@
+{
+  "name": "hip4-mm-runner",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Self-hosted Hyperliquid HIP-4 market maker runner for hip4.ag",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node scripts/mm/testnet-runner.mjs --headless",
+    "test": "node --test scripts/mm/*.test.mjs"
+  },
+  "dependencies": {
+    "@nktkas/hyperliquid": "0.33.3",
+    "viem": "2.55.10"
+  }
+}
